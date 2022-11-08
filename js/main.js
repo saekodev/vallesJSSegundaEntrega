@@ -52,22 +52,22 @@ function calculate() {
     alert( nombre + "Tu precio con descuento es de :" + valorFinal);
 }
 
-if (nombre === "") {
-} else {
+if (nombre === "") {}
+else {
   saludar();
   calculate();
 }
 
 let anuncio = prompt("Ingresaron novedades! Escribi 'VER' para acceder a todo lo nuevo!");
 
-function Nuevo (titulo, precio){
+function nuevoIngreso (titulo, precio){
     this.titulo = titulo;
     this.precio = precio;
 }
 
-const nuevosIngresos1 = new Nuevo("MTG Commander Legends", 85000);
-const nuevosIngresos2 = new Nuevo("Deckbox Rigido Gold", 4000);
-const nuevosIngresos3 = new Nuevo("Playmats GP Katowice", 8000);
+const nuevosIngresos1 = new nuevoIngreso("MTG Commander Legends", 85000);
+const nuevosIngresos2 = new nuevoIngreso("Deckbox Rigido Gold", 4000);
+const nuevosIngresos3 = new nuevoIngreso("Playmats GP Katowice", 8000);
 
 if(anuncio == "VER" || anuncio == "ver"){
     console.log(nuevosIngresos1, nuevosIngresos2, nuevosIngresos3);
